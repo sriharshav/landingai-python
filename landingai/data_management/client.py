@@ -25,7 +25,8 @@ GET_PROJECT = "get_project"
 GET_DEFECTS = "get_defects"
 GET_PROJECT_MODEL_INFO = "get_project_model_info"
 GET_FAST_TRAINING_EXPORT = "get_fast_training_export"
-
+# Custom routes
+GET_USER_TASK_MEDIA_LABEL_BATCH = "user_task_media_label_batch"
 
 ROUTES = {
     GET_PROJECT_SPLIT: {
@@ -86,6 +87,11 @@ ROUTES = {
     GET_PROJECT: {
         "root_url": "LANDING_API",
         "endpoint": "api/{version}/project/with_users",
+        "method": requests.get,
+    },
+    GET_USER_TASK_MEDIA_LABEL_BATCH: {
+        "root_url": "LANDING_API",
+        "endpoint": "api/tasks/user_task_media_label_batch",
         "method": requests.get,
     },
 }
