@@ -61,7 +61,7 @@ ROUTES = {
     },
     METADATA_UPDATE: {
         "root_url": "LANDING_API",
-        "endpoint": "api/{version}/object/medias_metadata",
+        "endpoint": "api/{version}/object/metadata",
         "method": requests.post,
     },
     METADATA_GET: {
